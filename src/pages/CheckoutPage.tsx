@@ -43,7 +43,7 @@ const CheckoutPage = () => {
         .select()
         .single();
 
-      if (orderError) throw orderError;
+      if (orderError || !order) throw orderError || new Error("Order creation failed");
 
       // Create order items
       const orderItems = items.map((item) => ({
