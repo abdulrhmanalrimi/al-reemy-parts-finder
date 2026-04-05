@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
+import type { Database } from "@/integrations/supabase/types";
+
+type Product = Database["public"]["Tables"]["products"]["Row"];
 import { useCart } from "@/contexts/CartContext";
 import { ShoppingCart, Plus, Search } from "lucide-react";
 import Header from "@/components/Header";

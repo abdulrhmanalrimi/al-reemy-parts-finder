@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useCart } from "@/contexts/CartContext";
 import { supabase } from "@/integrations/supabase/client";
+import type { Database } from "@/integrations/supabase/types";
 import { CheckCircle, Wallet, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Header from "@/components/Header";
