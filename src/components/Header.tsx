@@ -4,6 +4,7 @@ import logoBrand from "@/assets/logo-brand.jpg";
 
 const navItems = [
   { label: "الرئيسية", href: "#hero" },
+  { label: "المتجر", href: "/store" },
   { label: "المنتجات", href: "#products" },
   { label: "استعلام عن قطعة", href: "#inquiry" },
   { label: "من نحن", href: "#about" },
